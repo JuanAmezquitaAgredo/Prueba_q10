@@ -8,8 +8,22 @@
 </head>
 <body>
     <header>
-        <img src="/assets/images/LOGO PROGRAMA PARTNER Q10 BLANCO.png" alt="Logo_1">
-        <nav>
+        <img src="/assets/images/LOGO PROGRAMA PARTNER Q10.png" alt="Logo_1">
+        <nav id="menu">
+            <ul>
+                <li><a href="#/" onclick="navigateTo(event, '/')">Inicio</a></li>
+                <li><a href="#/partners" onclick="navigateTo(event, '/partners')">Partners</a></li>
+                <li><a href="#/contact" onclick="navigateTo(event, '/contact')">Contacto</a></li>
+            </ul>
+        </nav>
+       
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav id="sideMenu">
             <ul>
                 <li><a href="#/" onclick="navigateTo(event, '/')">Inicio</a></li>
                 <li><a href="#/partners" onclick="navigateTo(event, '/partners')">Partners</a></li>
