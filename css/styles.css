@@ -256,6 +256,28 @@ nav a:active {
     transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
+.partners-global {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partners-global-text{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.partners-global-img img {
+    padding-right: 15px;
+    width: 500px;
+    height: auto;
+}
+
 
 .partners-countries {
     font-size: 1.1rem;
