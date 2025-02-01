@@ -4,9 +4,14 @@ body {
     padding: 0;
     background-color: #EFEFEF;
     text-align: center;
+    padding-top: 150px;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url('/assets/images/ELEMENTO 1.webp');  
     background-size: cover;  
     background-position: center;  
@@ -15,6 +20,25 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 150px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-image: none;
+    background-color: #282B2E;
+    height: 70px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled img {
+    width: 120px;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a {
+    color: white;
+    transition: color 0.3s ease-in-out;
 }
 
 header img {
@@ -119,4 +143,129 @@ nav a:active {
         margin: 0 7%;
         border-radius: 10px;
     }
+}
+
+
+
+/* Partner seccion */
+#partners-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.partners-header {
+    display: flex;
+}
+
+.partners-header-img img{
+    width: 500px;
+    height: auto;
+    margin: 0 10%;
+}
+
+.partners-header-text{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+
+
+.partners-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.partners-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.cta-button {
+    background-color: #F79939;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #dd8b38;
+}
+
+.partners-benefits{
+    margin-top: 150px;
+}
+
+.partners-benefits {
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-benefits img {
+    position: absolute;
+    right: -15%;
+    top: -40%;
+    transform: rotate(-12deg);
+    width: 400px; /* Muestra 3/4 de la imagen */
+    max-width: 500px; /* Ajusta el tamaño máximo para evitar que sea demasiado grande */
+    height: auto;
+    object-fit: cover;
+    z-index: -1; /* Envía la imagen al fondo */
+    opacity: 0.8; /* Opcional: reduce la opacidad para que no opaque el contenido */
+}
+
+.partners-benefits h2, .partners-global h2, .partners-sustainability h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-top: 30px;
+}
+
+.partners-benefits ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-benefits li {
+    font-size: 1.2rem;
+    color: #302f2f;
+    margin: 10px 0;
+    background-color: white;
+    width: 70%;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+.partners-countries {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+.partners-sustainability p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 10px;
 }

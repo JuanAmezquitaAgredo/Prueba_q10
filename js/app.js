@@ -1,20 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("SPA cargada correctamente");
-
+    
     document.addEventListener("click", (event) => {
         if (event.target.matches(".cta-button")) {
             event.preventDefault();
             alert("¡Gracias por tu interés en ser un Partner!");
         }
     });
-
+    
     const observer = new MutationObserver(() => {
         console.log("Contenido actualizado en #app");
     });
-
+    
     observer.observe(document.getElementById("app"), { childList: true, subtree: true });
 });
 
+// Header Scroller 
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
 
 // Open SideMenu
 document.getElementById('hamburger').addEventListener('click', function(event) {
@@ -39,5 +49,7 @@ menuLinks.forEach(link => {
         const sideMenu = document.getElementById('sideMenu');
         sideMenu.classList.remove('open');
     });
+});
+
 });
 
