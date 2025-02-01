@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+    text-align: center;
+}
+
+header {
+    background-image: url('/assets/images/ELEMENTO 1.webp');  /* Imagen de fondo */
+    background-size: cover;  /* Hace que la imagen cubra el fondo */
+    background-position: center;  /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    color: #848B94;
+    padding: 1rem;
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    height: 150px;  /* Altura ajustada para el header */
+}
+
+header img {
+    width: 200px;  /* Tamaño del logo */
+    height: auto;
+    z-index: 2;  /* Asegura que el logo esté por encima de la imagen de fondo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 45px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    font-size: 20px;
+    color: #F79939;
+}
+
+section {
+    padding: 2rem;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
