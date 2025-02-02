@@ -695,6 +695,88 @@ nav a:active {
 
 
 
+.contact-section {
+    margin: 100px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Esto hace que el contenido se acomode bien en pantallas pequeñas */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.contact {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #F79939;
+    width: 100%; /* En pantallas pequeñas ocupan todo el ancho */
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-image: url('/assets/images/contactimage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.textarea-field {
+    height: 100px;
+    resize: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+    .contact-section {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .contact {
+        width: 80%;
+    }
+
+    .contact-img {
+        width: 40%;
+    }
+}
+
+
+
+
+
+
 
 
 
