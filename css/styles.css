@@ -517,11 +517,105 @@ nav a:active {
     background-repeat: no-repeat;
 }
 
+#home-section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #282B2E;
+}
+
+.home-case-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.home-case-item {
+    position: relative;
+    height: 40vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Diferentes fondos para cada caso */
+.home-case-item:nth-child(1) {
+    background-image: url('/assets/images/censa_back.png');
+}
+.home-case-item:nth-child(2) {
+    background-image: url('/assets/images/costa_rica_back.png');
+}
+.home-case-item:nth-child(3) {
+    background-image: url('/assets/images/eco_back.png');
+}
+.home-case-item:nth-child(4) {
+    background-image: url('/assets/images/ime.png');
+}
+
+/* Efecto al pasar el mouse */
+.home-case-item:hover {
+    flex: 1.5;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Título siempre visible */
+.case-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Texto con opacidad inicial 0 */
+.case-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 80%;
+    color: white;
+}
+
+/* Al pasar el mouse, el contenido aparece */
+.home-case-item:hover .case-content {
+    opacity: 1;
+}
+
+
+@media (max-width: 1024px) {
+    .home-case-item {
+        flex: 1 1 100%; /* Dos columnas en tablets */
+        height: 35vh; /* Un poco más pequeño en tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .home-case-item {
+        flex: 1 1 100%; /* Un solo bloque en móviles */
+        height: 35vh; /* Reduce la altura */
+    }
+}
+
+
+
+
 .home-subtitle {
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
-    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -548,6 +642,33 @@ nav a:active {
     color: #F79939;
 }
 
+
+#home-section-3{
+    width: 100%;
+    height: 60vh;
+    background-image: url('/assets/images/ELEMENTO 5.webp');  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#home-section-3 h2 {
+    margin: 0;
+}
+
+.home-section-3-text {
+    margin-left: 15%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 

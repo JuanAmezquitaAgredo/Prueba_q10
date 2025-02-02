@@ -53,3 +53,20 @@ menuLinks.forEach(link => {
 
 });
 
+
+// Controller for homepage
+
+document.addEventListener("DOMContentLoaded", () => {
+    const caseItems = document.querySelectorAll(".home-case-item");
+
+    caseItems.forEach(item => {
+        item.addEventListener("mouseenter", () => {
+            item.classList.add("hovered");
+        });
+
+        item.addEventListener("mouseleave", () => {
+            item.classList.remove("hovered");
+        });
+    });
+});
+
