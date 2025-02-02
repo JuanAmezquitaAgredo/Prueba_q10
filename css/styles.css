@@ -147,6 +147,16 @@ nav a:active {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Partner seccion */
 #partners-section {
     text-align: center;
@@ -333,8 +343,6 @@ nav a:active {
     transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-
-
 /* Mobile responsiveness */
 @media screen and (max-width: 1000px) {
 
@@ -479,6 +487,75 @@ nav a:active {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Home Section */
+#home-section {
+    text-align: center;
+}
+
+#home-section-1 {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/images/back-home.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+}
+
+.home-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.home-text {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.home-case-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.home-case-item {
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.home-case-item strong {
+    font-weight: bold;
+    color: #F79939;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*  Footer */
