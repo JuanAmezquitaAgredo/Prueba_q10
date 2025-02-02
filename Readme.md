@@ -49,9 +49,16 @@ Aunque la página cumple con los requisitos actuales, las siguientes mejoras se 
 
 Gracias por visitar el sitio de **Q10**. ¡Esperamos que sea útil para nuestros **partners**!
 
+## **Realizado por:**
+
+**nombre**: Juan sebastian Amezquita Agredo.
+**correo**: jagredo03@gmail.com.
+**cel**: 3176980852.
+
 
 ## **Estructura del proyecto**
 
+```bash
 prueba_q10/
 │
 ├── assets/              # Carpeta para recursos estáticos
@@ -68,10 +75,3 @@ prueba_q10/
 │   └── partner.html     # Página de socios
 ├── index.html           # El archivo principal HTML
 ├── README.md            # El archivo de documentación
-
-
-## **Realizado por:**
-
-**nombre**: Juan sebastian Amezquita Agredo
-**correo**: jagredo03@gmail.com
-**cel**: 3176980852
