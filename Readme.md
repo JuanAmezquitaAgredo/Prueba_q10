@@ -51,9 +51,9 @@ Gracias por visitar el sitio de **Q10**. ¡Esperamos que sea útil para nuestros
 
 ## **Realizado por:**
 
-**nombre**: Juan sebastian Amezquita Agredo.
-**correo**: jagredo03@gmail.com.
-**cel**: 3176980852.
+ - **nombre**: Juan sebastian Amezquita Agredo.
+ - **correo**: jagredo03@gmail.com.
+ - **cel**: 3176980852.
 
 
 ## **Estructura del proyecto**
